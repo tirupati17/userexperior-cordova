@@ -1,0 +1,47 @@
+{
+  "_from": "userexperior-cordova-plugin",
+  "_id": "userexperior-cordova-plugin@0.1.9",
+  "_inBundle": false,
+  "_integrity": "sha512-b76GHnl0L5D7JeNRFghB8/78UIFgn6plleRK3WPojvmPfCg4U+Avx1FbI2UIwRbscsPkHkGlNu+mn0ftOzDF5w==",
+  "_location": "/userexperior-cordova-plugin",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "tag",
+    "registry": true,
+    "raw": "userexperior-cordova-plugin",
+    "name": "userexperior-cordova-plugin",
+    "escapedName": "userexperior-cordova-plugin",
+    "rawSpec": "",
+    "saveSpec": null,
+    "fetchSpec": "latest"
+  },
+  "_requiredBy": [
+    "#USER",
+    "/"
+  ],
+  "_resolved": "https://registry.npmjs.org/userexperior-cordova-plugin/-/userexperior-cordova-plugin-0.1.9.tgz",
+  "_shasum": "325b9035b7b4fcf33879612a918a4f3d3c69994e",
+  "_spec": "userexperior-cordova-plugin",
+  "_where": "/Users/tirupatibalan/Documents/repository/bitbucket/userexperior/userexperior-cordova/DemoApp",
+  "author": {
+    "name": "UserExperior Technologies Pvt. Ltd."
+  },
+  "bundleDependencies": false,
+  "cordova": {
+    "id": "userexperior-cordova-plugin",
+    "platforms": [
+      "android",
+      "ios"
+    ]
+  },
+  "deprecated": false,
+  "description": "userexperior cordova plugin",
+  "keywords": [
+    "ecosystem:cordova",
+    "cordova-android"
+  ],
+  "license": "ISC",
+  "name": "userexperior-cordova-plugin",
+  "spec": "latest",
+  "version": "0.1.9"
+}
