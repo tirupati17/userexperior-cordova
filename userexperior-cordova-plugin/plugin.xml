@@ -27,8 +27,8 @@
         <source-file src="src/ios/CDVUserExperior.m"/>
         
         <!-- Add in the UserExperior framework -->
-        <framework src="src/ios/UserExperior.framework" custom="true"/>
-        
+        <framework src="src/ios/UserExperior.framework" embed="true" custom="true" /> 
+
         <!-- and the system frameworks that UserExperior depends on -->
         <framework src="CoreTelephony.framework" />
     </platform>
