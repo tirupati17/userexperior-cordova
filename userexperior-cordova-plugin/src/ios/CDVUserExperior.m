@@ -8,7 +8,7 @@
     NSString* apiKey = command.arguments[0];
     
     if (apiKey.length > 0) {
-        NSLog(@"UserExperior initiated with given key %@ via cordova", apiKey);   
+        NSLog(@"UserExperior 4.1.29 initiated with given key %@ via cordova", apiKey);
         [UserExperior initialize:apiKey];
         pluginResult = [CDVPluginResult resultWithStatus:CDVCommandStatus_OK];
     } else {
@@ -24,7 +24,7 @@
     NSString *type = command.arguments[1];
 
     if (tag.length>0 && type.length>0) {
-        [UserExperior setCustomTag:tag customType:type];
+        [UserExperior setCustomTagWithString:tag customType:type];
         pluginResult = [CDVPluginResult resultWithStatus:CDVCommandStatus_OK];
     } else {
         pluginResult = [CDVPluginResult resultWithStatus:CDVCommandStatus_ERROR];
@@ -62,6 +62,34 @@
     [UserExperior stopRecording];
 
     [self.commandDelegate sendPluginResult:[CDVPluginResult resultWithStatus:CDVCommandStatus_OK] callbackId:command.callbackId];
+}
+
+- (void)consent:(CDVInvokedUrlCommand*)command {
+    [UserExperior consent];
+    
+    [self.commandDelegate sendPluginResult:[CDVPluginResult resultWithStatus:CDVCommandStatus_OK] callbackId:command.callbackId];
+}
+
+- (void)optIn:(CDVInvokedUrlCommand*)command {
+    [UserExperior optIn];
+    
+    [self.commandDelegate sendPluginResult:[CDVPluginResult resultWithStatus:CDVCommandStatus_OK] callbackId:command.callbackId];
+}
+
+- (void)optOut:(CDVInvokedUrlCommand*)command {
+    [UserExperior optOut];
+    
+    [self.commandDelegate sendPluginResult:[CDVPluginResult resultWithStatus:CDVCommandStatus_OK] callbackId:command.callbackId];
+}
+
+- (BOOL)getOptOutStatus:(CDVInvokedUrlCommand*)command {
+    if ([UserExperior getOptOutStatus]) {
+        [self.commandDelegate sendPluginResult:[CDVPluginResult resultWithStatus:CDVCommandStatus_OK] callbackId:command.callbackId];
+        return TRUE;
+    } else {
+        [self.commandDelegate sendPluginResult:[CDVPluginResult resultWithStatus:CDVCommandStatus_ERROR] callbackId:command.callbackId];
+        return FALSE;
+    }
 }
 
 @end

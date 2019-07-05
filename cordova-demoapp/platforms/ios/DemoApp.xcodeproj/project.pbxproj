@@ -8,15 +8,15 @@
 
 /* Begin PBXBuildFile section */
 		0207DA581B56EA530066E2B4 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0207DA571B56EA530066E2B4 /* Images.xcassets */; };
-		0917AC20222E4A99A4FD7B1C /* UserExperior.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 4683AB9221CB496B9890F721 /* UserExperior.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
 		1D3623260D0F684500981E51 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D3623250D0F684500981E51 /* AppDelegate.m */; };
 		1D60589B0D05DD56006BFB54 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 29B97316FDCFA39411CA2CEA /* main.m */; };
 		301BF552109A68D80062928A /* libCordova.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 301BF535109A57CC0062928A /* libCordova.a */; settings = {ATTRIBUTES = (Required, ); }; };
 		302D95F114D2391D003F00A1 /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 302D95EF14D2391D003F00A1 /* MainViewController.m */; };
 		302D95F214D2391D003F00A1 /* MainViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 302D95F014D2391D003F00A1 /* MainViewController.xib */; };
+		3A95B01ED46143C5AB4405AD /* CDVUserExperior.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F45F42328EE4A879F70D78B /* CDVUserExperior.m */; };
 		6AFF5BF91D6E424B00AB3073 /* CDVLaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6AFF5BF81D6E424B00AB3073 /* CDVLaunchScreen.storyboard */; };
-		B8B651DE08B94FE8ACFBC0E9 /* CDVUserExperior.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F8CDA9BF8D24AA787A777E3 /* CDVUserExperior.m */; };
-		C96671CBA1C44B2DA8FF0F93 /* CoreTelephony.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C3DCFA8D930F46B49A933C78 /* CoreTelephony.framework */; };
+		6DF6C116E9EE433C88F153D8 /* UserExperior.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 1AAAC474A84A4C37844161B1 /* UserExperior.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
+		A823126B1490413D8EEE0D5F /* CoreTelephony.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0734B6561EEB44DB82F9ED3F /* CoreTelephony.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,13 +44,13 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
-		BB796F077A2D4CC697897C4E /* Embed Frameworks */ = {
+		D013965C4F2B486F99BCD967 /* Embed Frameworks */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				0917AC20222E4A99A4FD7B1C /* UserExperior.framework in Embed Frameworks */,
+				6DF6C116E9EE433C88F153D8 /* UserExperior.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -59,10 +59,11 @@
 
 /* Begin PBXFileReference section */
 		0207DA571B56EA530066E2B4 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = DemoApp/Images.xcassets; sourceTree = SOURCE_ROOT; };
+		0734B6561EEB44DB82F9ED3F /* CoreTelephony.framework */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = wrapper.framework; name = CoreTelephony.framework; path = System/Library/Frameworks/CoreTelephony.framework; sourceTree = SDKROOT; };
+		1AAAC474A84A4C37844161B1 /* UserExperior.framework */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = wrapper.framework; name = UserExperior.framework; path = "DemoApp/Plugins/userexperior-cordova-plugin/UserExperior.framework"; sourceTree = "<group>"; };
 		1D3623240D0F684500981E51 /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		1D3623250D0F684500981E51 /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		1D6058910D05DD3D006BFB54 /* DemoApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DemoApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		1F8CDA9BF8D24AA787A777E3 /* CDVUserExperior.m */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.c.objc; name = CDVUserExperior.m; path = "userexperior-cordova-plugin/CDVUserExperior.m"; sourceTree = "<group>"; };
 		29B97316FDCFA39411CA2CEA /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		301BF52D109A57CC0062928A /* CordovaLib/CordovaLib.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; path = CordovaLib/CordovaLib.xcodeproj; sourceTree = "<group>"; };
 		301BF56E109A69640062928A /* www */ = {isa = PBXFileReference; lastKnownFileType = folder; path = www; sourceTree = SOURCE_ROOT; };
@@ -73,11 +74,10 @@
 		3047A5101AB8059700498E2A /* build-release.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; name = "build-release.xcconfig"; path = "cordova/build-release.xcconfig"; sourceTree = SOURCE_ROOT; };
 		3047A5111AB8059700498E2A /* build.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; name = build.xcconfig; path = cordova/build.xcconfig; sourceTree = SOURCE_ROOT; };
 		32CA4F630368D1EE00C91783 /* DemoApp-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "DemoApp-Prefix.pch"; sourceTree = "<group>"; };
-		4683AB9221CB496B9890F721 /* UserExperior.framework */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = wrapper.framework; name = UserExperior.framework; path = "DemoApp/Plugins/userexperior-cordova-plugin/UserExperior.framework"; sourceTree = "<group>"; };
+		5F45F42328EE4A879F70D78B /* CDVUserExperior.m */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.c.objc; name = CDVUserExperior.m; path = "userexperior-cordova-plugin/CDVUserExperior.m"; sourceTree = "<group>"; };
 		6AFF5BF81D6E424B00AB3073 /* CDVLaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = CDVLaunchScreen.storyboard; path = DemoApp/CDVLaunchScreen.storyboard; sourceTree = SOURCE_ROOT; };
 		8D1107310486CEB800E47090 /* DemoApp-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "DemoApp-Info.plist"; path = "DemoApp/DemoApp-Info.plist"; plistStructureDefinitionIdentifier = "com.apple.xcode.plist.structure-definition.iphone.info-plist"; sourceTree = SOURCE_ROOT; };
-		AA46035AE83C47CD83C1D5D5 /* CDVUserExperior.h */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.c.h; name = CDVUserExperior.h; path = "userexperior-cordova-plugin/CDVUserExperior.h"; sourceTree = "<group>"; };
-		C3DCFA8D930F46B49A933C78 /* CoreTelephony.framework */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = wrapper.framework; name = CoreTelephony.framework; path = System/Library/Frameworks/CoreTelephony.framework; sourceTree = SDKROOT; };
+		E34C414624F648BCA03F1CD1 /* CDVUserExperior.h */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.c.h; name = CDVUserExperior.h; path = "userexperior-cordova-plugin/CDVUserExperior.h"; sourceTree = "<group>"; };
 		EB87FDF31871DA8E0020F90C /* www */ = {isa = PBXFileReference; lastKnownFileType = folder; name = www; path = ../../www; sourceTree = "<group>"; };
 		EB87FDF41871DAF40020F90C /* config.xml */ = {isa = PBXFileReference; lastKnownFileType = text.xml; name = config.xml; path = ../../config.xml; sourceTree = "<group>"; };
 		ED33DF2A687741AEAF9F8254 /* Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Bridging-Header.h"; sourceTree = "<group>"; };
@@ -90,7 +90,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				301BF552109A68D80062928A /* libCordova.a in Frameworks */,
-				C96671CBA1C44B2DA8FF0F93 /* CoreTelephony.framework in Frameworks */,
+				A823126B1490413D8EEE0D5F /* CoreTelephony.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -161,8 +161,8 @@
 		29B97323FDCFA39411CA2CEA /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				4683AB9221CB496B9890F721 /* UserExperior.framework */,
-				C3DCFA8D930F46B49A933C78 /* CoreTelephony.framework */,
+				1AAAC474A84A4C37844161B1 /* UserExperior.framework */,
+				0734B6561EEB44DB82F9ED3F /* CoreTelephony.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -189,8 +189,8 @@
 		307C750510C5A3420062BCA9 /* Plugins */ = {
 			isa = PBXGroup;
 			children = (
-				1F8CDA9BF8D24AA787A777E3 /* CDVUserExperior.m */,
-				AA46035AE83C47CD83C1D5D5 /* CDVUserExperior.h */,
+				5F45F42328EE4A879F70D78B /* CDVUserExperior.m */,
+				E34C414624F648BCA03F1CD1 /* CDVUserExperior.h */,
 			);
 			name = Plugins;
 			path = DemoApp/Plugins;
@@ -216,7 +216,7 @@
 				1D60588D0D05DD3D006BFB54 /* Resources */,
 				1D60588E0D05DD3D006BFB54 /* Sources */,
 				1D60588F0D05DD3D006BFB54 /* Frameworks */,
-				BB796F077A2D4CC697897C4E /* Embed Frameworks */,
+				D013965C4F2B486F99BCD967 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -321,7 +321,7 @@
 				1D60589B0D05DD56006BFB54 /* main.m in Sources */,
 				1D3623260D0F684500981E51 /* AppDelegate.m in Sources */,
 				302D95F114D2391D003F00A1 /* MainViewController.m in Sources */,
-				B8B651DE08B94FE8ACFBC0E9 /* CDVUserExperior.m in Sources */,
+				3A95B01ED46143C5AB4405AD /* CDVUserExperior.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
